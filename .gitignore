@@ -1,0 +1,6 @@
+# Arquivos do Terraform CLI
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+*.tfvars
