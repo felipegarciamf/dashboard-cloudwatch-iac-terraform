@@ -3,4 +3,5 @@
 terraform.tfstate
 terraform.tfstate.backup
 *.tfplan
-*.tfvars
+*.tfvarsgt
+.terraform.lock.hcl
