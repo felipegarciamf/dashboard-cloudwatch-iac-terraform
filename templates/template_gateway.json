@@ -13,7 +13,7 @@
                   [ "AWS/Logs", "CallCount", "Type", "API", "Resource", "DescribeMetricFilters", "Service", "Logs", "Class", "None" ],
                   [ "...", "GetLogGroupFields", ".", ".", ".", "." ]
               ],
-              "region": "us-east-2"
+              "region": "${aws_region}"
           }
       },
       {
@@ -26,9 +26,9 @@
               "view": "timeSeries",
               "stacked": false,
               "metrics": [
-                  [ "AWS/S3", "NumberOfObjects", "StorageType", "AllStorageTypes", "BucketName", "cursotesteemjava", { "period": 86400 } ]
+                  [ "AWS/S3", "NumberOfObjects", "StorageType", "AllStorageTypes", "BucketName", "${bucket_name}", { "period": 86400 } ]
               ],
-              "region": "us-east-2"
+              "region": "${aws_region}"
           }
       }
   ]
