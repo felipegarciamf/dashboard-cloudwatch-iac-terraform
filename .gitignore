@@ -1,0 +1,7 @@
+# Arquivos do Terraform CLI
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+*.tfvarsgt
+.terraform.lock.hcl

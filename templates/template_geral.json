@@ -1,0 +1,69 @@
+{
+  "widgets": [
+      {
+          "height": 6,
+          "width": 6,
+          "y": 0,
+          "x": 0,
+          "type": "metric",
+          "properties": {
+              "metrics": [
+                  [ "ApiGateway", "Count", "ApiName", "api", { "period": 300, "stat": "Sum" } ]
+              ],
+              "region": "us-east-1",
+              "title": "API Gateway Requests"
+          }
+      },
+      {
+          "height": 6,
+          "width": 6,
+          "y": 10,
+          "x": 6,
+          "type": "metric",
+          "properties": {
+              "metrics": [
+                  [ "AWS/EC2", "CPUUtilization", "InstanceId", "instance" ]
+              ],
+              "region": "us-east-1",
+              "title": "EC2 CPU Utilization"
+          }
+      },
+      {
+          "type": "metric",
+          "x": 12,
+          "y": 0,
+          "width": 6,
+          "height": 6,
+          "properties": {
+              "metrics": [
+                  [ "AWS/S3", "BucketSizeBytes", "BucketName", "${bucket_name}", "StorageType", "StandardStorage", { "period": 86400, "stat": "Average" } ]
+              ],
+              "legend": {
+                  "position": "bottom"
+              },
+              "region": "us-east-2",
+              "liveData": false,
+              "timezone": "UTC",
+              "title": "BucketSizeBytes: Average",
+              "view": "timeSeries",
+              "stacked": false
+          }
+      },
+      {
+          "type": "metric",
+          "x": 18,
+          "y": 0,
+          "width": 6,
+          "height": 6,
+          "properties": {
+              "view": "timeSeries",
+              "stacked": false,
+              "metrics": [
+                  [ "AWS/S3", "BucketSizeBytes", "StorageType", "StandardStorage", "BucketName", "${bucket_name}", { "period": 86400 } ]
+              ],
+              "region": "us-east-2",
+              "title": "BucketSizeBytes"
+          }
+      }
+  ]
+}
