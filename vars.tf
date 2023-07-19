@@ -22,8 +22,3 @@ variable "bucket_name" {
   type    = string
   default = "bucket"
 }
-
-variable "dashboard_files" {
-  type    = list(string)
-  default = ["dashboard1.json", "dashboard2.json", "dashboard3.json"]
-}

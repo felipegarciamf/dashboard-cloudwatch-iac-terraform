@@ -36,6 +36,7 @@ locals {
   widget_gateway_content = templatefile("templates/template_gateway.json", {
     api_name   = var.api_name
     aws_region = var.aws_region
+    bucket_name = var.bucket_name
   })
 
 }
