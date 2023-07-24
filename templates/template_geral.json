@@ -8,7 +8,7 @@
           "type": "metric",
           "properties": {
               "metrics": [
-                  [ "ApiGateway", "Count", "ApiName", "api", { "period": 300, "stat": "Sum" } ]
+                  [ "ApiGateway", "Count", "ApiName", "${api_name}", { "period": 300, "stat": "Sum" } ]
               ],
               "region": "us-east-1",
               "title": "API Gateway Requests"
