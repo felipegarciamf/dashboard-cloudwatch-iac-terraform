@@ -9,6 +9,7 @@ locals {
     instance_id = var.instance_id
     aws_region  = var.aws_region
     bucket_name = var.bucket_name
+    api_name   = var.api_name
   })
 
   widget_gateway_content = templatefile("templates/template_gateway.json", {
